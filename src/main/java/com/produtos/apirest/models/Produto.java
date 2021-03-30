@@ -18,11 +18,11 @@ public class Produto implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long id;
+	private Long id;
 	@NotNull
 	private String nome;
 	@NotNull
-	private BigDecimal quantidades;
+	private BigDecimal quantidade;
 	@NotNull
 	private BigDecimal valor;
 	
@@ -41,10 +41,10 @@ public class Produto implements Serializable{
 		this.nome = nome;
 	}
 	public BigDecimal getQuantidade() {
-		return quantidades;
+		return quantidade;
 	}
 	public void setQuantidade(BigDecimal quantidade) {
-		this.quantidades = quantidade;
+		this.quantidade = quantidade;
 	}
 	public BigDecimal getValor() {
 		return valor;
